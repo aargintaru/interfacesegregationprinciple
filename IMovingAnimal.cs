@@ -1,9 +1,8 @@
 namespace interfacesegregationprinciple
 {
-    public interface IAnimalBehavior
+    public interface IMovingAnimal
     {
         void Move();
         void Run();
-        void Fly();
     }
 }

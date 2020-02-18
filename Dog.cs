@@ -2,17 +2,13 @@ using System;
 
 namespace interfacesegregationprinciple
 {
-    public class Dog : IAnimalBehavior
+    public class Dog : IMovingAnimal
     {
         private string name;
 
         public Dog(String name)
         {
             this.name = name;
-        }
-        public void Fly()
-        {
-            Console.WriteLine("This animal can't fly...");
         }
 
         public void Move()

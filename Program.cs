@@ -6,17 +6,15 @@ namespace interfacesegregationprinciple
     {
         static void Main(string[] args)
         {
-            Dog d = new Dog("Rex");
-            Bird b = new Bird("Tweety");
+            IMovingAnimal d = new Dog("Rex");
+            IFlyingAnimal b = new Bird("Tweety");
 
             d.Move();
             d.Run();
-            d.Fly();
 
             Console.WriteLine();
 
             b.Move();
-            b.Run();
             b.Fly();
         }
     }

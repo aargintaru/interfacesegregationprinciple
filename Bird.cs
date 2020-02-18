@@ -2,7 +2,7 @@ using System;
 
 namespace interfacesegregationprinciple
 {
-    internal class Bird
+    internal class Bird : IFlyingAnimal
     {
         private string name;
 
@@ -19,11 +19,6 @@ namespace interfacesegregationprinciple
         public void Move()
         {
             Console.WriteLine($"{name} moves from A to B");
-        }
-
-        public void Run()
-        {
-            Console.WriteLine("This animal can't fly...");
         }
     }
 }
